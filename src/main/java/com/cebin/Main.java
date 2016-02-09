@@ -6,20 +6,22 @@ package com.cebin;
 public class Main {
     public static void main(String[] args) {
 
-        Pilha pilha = new Pilha();
+        Stack pilha = new Stack();
         pilha.add(10);
         pilha.add(20);
         pilha.add(30);
 
-        System.out.println("Tamanho da pilha = "+pilha.tamanho());
-        pilha.limpa();
-        System.out.println("Tamanho da pilha = "+pilha.tamanho());
+        System.out.println("Tamanho da pilha = "+pilha.size());
+        pilha.clean();
+        System.out.println("Tamanho da pilha = "+pilha.size());
 
         pilha.remove();
-        pilha.remove();
+        System.out.println(pilha.returnTop());
+        System.out.println("Tamanho da pilha = "+pilha.size());
+        //pilha.remove();
 
-        System.out.println("Tamanho da pilha = "+pilha.tamanho());
-        System.out.println(pilha.topo.conteudo);
+       // System.out.println("Tamanho da pilha = "+pilha.size());
+        //System.out.println(pilha.top.content);
 
     }
 }
